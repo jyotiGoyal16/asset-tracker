@@ -76,7 +76,6 @@ const DataEntry = () => {
 
     return(
         <div>
-            <h1>Asset View</h1>
             <div className="flex justify-between items-center">
                 <div className="flex items-center">
                     <div>Select Financial Year: </div>

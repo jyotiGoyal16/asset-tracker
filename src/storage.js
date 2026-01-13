@@ -18,3 +18,16 @@ export const getCurrentFY = () => {
     const currFY = localStorage.getItem("currFY");
     return currFY;
 }
+
+// FY24-25:{
+//     april:{
+//         row1:data,
+//         row2: data,
+//         row3: data
+//     },
+//     may:{},
+//     june:{},
+// },
+// FY25-26{
+//     repeat above structure
+// }

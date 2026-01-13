@@ -1,18 +1,23 @@
-import { FY_MONTHS, ASSETS_LIST } from "./constants";
+import { ASSETS_LIST } from "./constants"
 
-export const createEmptyAssetTable = (fy, month) => {
+const currentDate = new Date();
 
+export const getCurrentMonth = () => {
+    const monthNameLong = currentDate.toLocaleString('default', { month: 'long' });
+    return monthNameLong; 
 }
 
-// FY24-25:{
-//     april:{
-//         row1:data,
-//         row2: data,
-//         row3: data
-//     },
-//     may:{},
-//     june:{},
-// },
-// FY25-26{
-//     repeat above structure
-// }
+export const getPreviousMonth = () => {
+    const previousMonthDate = new Date(currentDate);
+    previousMonthDate.setMonth(currentDate.getMonth() - 1);
+
+    const prevMonthNameLong = previousMonthDate.toLocaleString('default', { month: 'long' });
+    return prevMonthNameLong; 
+}
+
+export const getClassMap = () => {
+    return ASSETS_LIST.reduce((acc, asset) => {
+        acc[asset.assetId] = asset.class;
+        return acc;
+    }, {})
+}

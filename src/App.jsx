@@ -3,6 +3,7 @@ import './App.css'
 import Layout from './components/Layout'
 import Dashboard from "./pages/Dashboard"
 import DataEntry from "./pages/DataEntry"
+import "./chartSetup"
 
 function App() {
   return (
