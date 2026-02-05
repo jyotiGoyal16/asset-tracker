@@ -1,4 +1,4 @@
-import { ASSETS_LIST } from "./constants"
+import { ASSETS_LIST } from "../constants"
 
 const currentDate = new Date();
 

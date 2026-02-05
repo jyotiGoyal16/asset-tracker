@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { getCurrentMonth, getPreviousMonth } from "../helper"
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { getCurrentMonth, getPreviousMonth } from "../utils/helper"
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js"
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

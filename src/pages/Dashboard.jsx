@@ -3,7 +3,7 @@ import AssetAllocation from "../components/AssetAllocation"
 import Kpi from "../components/Kpi"
 import NetWorthGraph from "../components/NetWorthGraph"
 import { FY } from "../constants"
-import { getCurrentFY, setCurrentFY, getTrackerData } from "../storage"
+import { getCurrentFY, setCurrentFY, getTrackerData } from "../utils/storage"
 
 const Dashboard = () => {
     const [financialYear, setFinacialYear] = useState("");

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { FY_MONTHS, ASSETS_LIST, FY } from "../constants";
-import { getCurrentFY, getTrackerData, setTrackerData } from "../storage"
+import { FY_MONTHS, ASSETS_LIST, FY } from "../constants"
+import { getCurrentFY, getTrackerData, setTrackerData } from "../utils/storage"
 
 const DataEntry = () => {
     const [financialYear, setFinancialYear] = useState("");

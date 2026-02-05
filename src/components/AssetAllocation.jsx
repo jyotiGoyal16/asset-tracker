@@ -1,5 +1,5 @@
-import { Doughnut } from "react-chartjs-2";
-import { getClassMap, getCurrentMonth } from "../helper"
+import { Doughnut } from "react-chartjs-2"
+import { getClassMap, getCurrentMonth } from "../utils/helper"
 import { useEffect, useState } from "react"
 
 const AssetAllocation = ({ data, fy }) => {
